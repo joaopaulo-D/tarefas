@@ -6,10 +6,7 @@ import AdiconarTarefa from "./components/AdicionarTarefa";
 
 const App = () => {
 
-  const [list, setList] = useState<Item[]>([
-    { id: 1, nome: 'Pragramar Hoje', done: false},
-    { id: 2, nome: 'Pragramar Amanha', done: false }
-  ])
+  const [list, setList] = useState<Item[]>([])
 
   function handleAdicionarTarefa(nomeTarefa: string){
       let newTarefa = [...list];
